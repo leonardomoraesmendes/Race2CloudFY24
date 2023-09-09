@@ -57,7 +57,7 @@
 	
  	Este, descargará el contenido necesario para configurar el cluster
 
-6. Una vez desargado entrar al directorio ***"Race2CloudFY24"*** y ejecutar el script ***configuracionesOKE.sh*** mediante los comandos 
+6. Una vez desargado entrar al directorio ***Race2CloudFY24*** y ejecutar el script ***configuracionesOKE.sh*** mediante los comandos 
 	```
 	cd Race2CloudFY24
  	bash configuracionesOKE.sh 
@@ -68,10 +68,50 @@
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/8788492d-f3a7-4a2d-9567-b8db7fb51f4b)
 
 7. Acceder a la URL entregada por el comando anterior utilizando las credenciales también entregadas (para cada caso las credenciales e ip son distintas)
-	
+ 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/5fc8f180-3521-4feb-be63-9aad5adf1513)
 
-8. das
-9. da
-10. a
+8. Una vez dentro de la plataforma debemos crear 3 aplicaciones distintas de la sigueinte forma
+	Hacer click en botín ***+ NEW APP***
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/06adb6f9-1d48-4def-bc47-2e320af0d7e1)
+
+ 	Una ve dentro de ***NEW APPLICATION*** a crear la primera definir los siguientes parámetros dentro del apartado ***GENERAL***
+ 	```
+	Application Name:			api-reader
+  	Project Name: 				Seleccionar el proyecto default
+  	SYYNC POLICY:				Seleccionar la opción Automatic
+	Dar click y selecionar en la opción AUTO-CREATE NAMESPACE
+  	```
+  	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/84f7596b-e74e-4c8a-9059-f5a4dd573438)
+
+	Dentro del apartado SOURCE definir
+	```
+	Repository URL:				https://github.com/whiplash0104/Race2CloudFY24.git
+ 	Revision:				main
+ 	Path:					api-reader/api-reader-manifest
+ 	```
+ 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/29d6535c-4941-43ac-8323-4bbf784c2799)
+
+
+	Desde el apartado ***DESTINATION***
+	```
+	Cluster URL:				Seleccionar la opción https://kubernetes.default.svc
+ 	Namespace:				api-reader
+ 	```
+ 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/cf41c3f9-24c4-431a-ac57-0697c73bfafb)
+
+	Finalmente dar click en el botón ***CREATE***
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/3d466c5a-9e11-4100-b67a-9f194cc337fd)
+
+	Posterior a ello, ArgoCD comenzará a deslegar la aplicación en el cluster.
+
+	Se verá de color celeste mientras desplega
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/5bf4aa77-677c-434b-9a4c-47802205042d)
+
+	Si el proceso de despliegue finalizó de forma correcta cambiará a color verde
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/36c2fe79-7f47-40bb-9bba-9da04c8c2c5f)
+
+ 
+10. 
 11. a
-12. 
+12. a
+13. 
