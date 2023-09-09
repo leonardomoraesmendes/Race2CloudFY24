@@ -1,0 +1,4 @@
+oci
+oracledb
+flask
+flask_restful

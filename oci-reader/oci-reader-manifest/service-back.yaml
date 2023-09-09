@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: oci-reader-back-svc
+  namespace: oci-reader
+spec:
+  selector:
+    app: oci-reader
+  ports:
+    - name: backend
+      port: 4000
+      targetPort: 4000
+      protocol: TCP
+  type: ClusterIP
