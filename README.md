@@ -111,7 +111,34 @@
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/36c2fe79-7f47-40bb-9bba-9da04c8c2c5f)
 
  
-10. 
-11. a
+10. Repetir el mismo proceso para las próximas dos aplicaciones
+	Click en ***NEW APPLICATION*** y definir los siguientes parámetros
+ 	```
+	Application Name:			oci-reader
+  	Project Name: 				Seleccionar el proyecto default
+  	SYYNC POLICY:				Seleccionar la opción Automatic
+	Dar click y selecionar en la opción AUTO-CREATE NAMESPACE
+  	Repository URL:				https://github.com/whiplash0104/Race2CloudFY24.git
+ 	Revision:				main
+ 	Path:					oci-reader/oci-reader-manifest
+  	Cluster URL:				Seleccionar la opción https://kubernetes.default.svc
+ 	Namespace:				oci-reader
+  	```
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/09740c03-d10a-4b16-9b03-36b0b1631c37)
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/e92bb58f-c2be-44a3-a825-f924fcfe7a9b)
+
+	Podemos notar que mientras se despliega la nueva aplicación tenemos un porcentaje en verde y otro en celeste
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/f84b23c2-6d3d-4a59-9914-81984d54ed1d)
+
+	Una vez finalizado el despliegue de forma correcta podemos ver todo en verde
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/988635cb-48da-463e-b5a3-a603afe8d300)
+
+
 12. a
-13. 
+13. a
+14. a
+15. a
+16. a
+17. a
+18. a
+19. 
