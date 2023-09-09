@@ -156,3 +156,10 @@
 	Al hacer click en estas podemos ver el detalle de lo desplegado (ejemplo: oci-reader)
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/3bea83ca-fe56-46bd-b6d9-6feac8048380)
 
+13. Para conectar a la aplicación desplegada dentro del ***Cloud Shell*** ejecutar
+	```
+	kubectl get service -n ingress-nginx | grep LoadBalancer | awk '{print $4}'
+ 	```
+ 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/98e7e60c-e995-433d-bc0a-b7ff34e9dcce)
+
+14. Acceder a la IP pública entregada
