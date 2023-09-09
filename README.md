@@ -16,7 +16,7 @@
 ### Paso a Paso
 
 0. Crear Compartment
-	Menu -> Identity & Security -> Compartmente -> New Compartment
+	Menu > Identity & Security > Compartmente > New Compartment
 	```
 	CAMPO				VALOR
 	==============================================
@@ -28,4 +28,7 @@
 
 ....
 
-1. Posterior a la creación del cluster OKE entrar a 
+1. Posterior a la creación del cluster OKE, acceder a este
+	Menu > Developer Services > Kubernetes Clusters (OKE) > Clustyer creado
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/af8781b0-f2fa-4575-97ff-a6705f171d20)
+
