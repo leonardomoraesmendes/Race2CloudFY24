@@ -26,9 +26,20 @@
 
 1. Crear Cluster 
 
-....
+### Actividades post creación cluster
 
 1. Posterior a la creación del cluster OKE, acceder a este
-	Menu > Developer Services > Kubernetes Clusters (OKE) > Clustyer creado
+	Menu > Developer Services > Kubernetes Clusters (OKE)
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/af8781b0-f2fa-4575-97ff-a6705f171d20)
 
+2. Acceder a cluster creado (el nombre del cluster puede variar)
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/f3bb88c2-7c30-43cc-8726-027f68b2d993)
+	
+
+3. Hacer click en "Access Cluster" 
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/8e77f63a-87d9-421c-a27d-f2f765c8e21f)
+
+   	Dejar seleccionada la opción "Cloud Shell Access" y hacer click en el botón "Launch Cloud shell"
+   	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/acb9614c-a301-4600-abd8-5efbea27653b)
+
+4. 
