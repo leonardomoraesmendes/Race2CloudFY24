@@ -156,11 +156,3 @@
 	Al hacer click en estas podemos ver el detalle de lo desplegado (ejemplo: oci-reader)
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/3bea83ca-fe56-46bd-b6d9-6feac8048380)
 
-
-14. a
-15. a
-16. a
-17. a
-18. a
-19. a
-20. 
