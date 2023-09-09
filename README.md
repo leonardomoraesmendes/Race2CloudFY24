@@ -111,7 +111,7 @@
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/36c2fe79-7f47-40bb-9bba-9da04c8c2c5f)
 
  
-10. Repetir el mismo proceso para las próximas dos aplicaciones
+10. Repetir el mismo proceso para la siguiente aplicación
 	Click en ***NEW APPLICATION*** y definir los siguientes parámetros
  	```
 	Application Name:			oci-reader
@@ -134,11 +134,33 @@
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/988635cb-48da-463e-b5a3-a603afe8d300)
 
 
-12. a
-13. a
+12. Repetir el mismo proceso para la última aplicación
+	Click en ***NEW APPLICATION*** y definir los siguientes parámetros
+ 	```
+	Application Name:			oci-transcribe
+  	Project Name: 				Seleccionar el proyecto default
+  	SYYNC POLICY:				Seleccionar la opción Automatic
+	Dar click y selecionar en la opción AUTO-CREATE NAMESPACE
+  	Repository URL:				https://github.com/whiplash0104/Race2CloudFY24.git
+ 	Revision:				main
+ 	Path:					oci-transcribe/oci-transcribe-manifest
+  	Cluster URL:				Seleccionar la opción https://kubernetes.default.svc
+ 	Namespace:				oci-transcribe
+  	```
+  	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/722a700b-5ccf-4587-ab75-ef0f50599335)
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/b904c0bb-6e34-4312-acb5-5e51e9fdc1de)
+
+	Una vez finalizado deberíamos tener las tres aplicaciones ejecutandose de forma correcta
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/4faa5440-eea7-4a2a-811a-0b87d3af0ece)
+
+	Al hacer click en estas podemos ver el detalle de lo desplegado (ejemplo: oci-reader)
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/3bea83ca-fe56-46bd-b6d9-6feac8048380)
+
+
 14. a
 15. a
 16. a
 17. a
 18. a
-19. 
+19. a
+20. 
