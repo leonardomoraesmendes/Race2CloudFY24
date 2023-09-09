@@ -44,9 +44,12 @@
    	Dejar seleccionada la opción "Cloud Shell Access" y hacer click en el botón "Launch Cloud shell"
    	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/acb9614c-a301-4600-abd8-5efbea27653b)
 	
- 	Se abrirá una consola en la parte inferior de la pantalla. Una vez caragada, 
+ 	Se abrirá una consola en la parte inferior de la pantalla. Una vez caragada, si es primera vez que se abre, mostrará un mensaje preguntando si deseamos leer más sobre *Cloud Shell*
+	En el caso de no desear hacerlo, teclear letra N y enter
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/5398d347-7e6a-40d8-b323-3f5012fa9829)
+
  
-4. Clonar repositorio git desde consola mediante el comando
+5. Clonar repositorio git desde consola mediante el comando
 	```
 	git clone https://github.com/whiplash0104/Race2CloudFY24.git
  	```
@@ -54,7 +57,7 @@
 	
  	Este, descargará el contenido necesario para configurar el cluster
 
-5. Una vez desargado entrar al directorio ***"Race2CloudFY24"*** y ejecutar el script ***configuracionesOKE.sh*** mediante los comandos 
+6. Una vez desargado entrar al directorio ***"Race2CloudFY24"*** y ejecutar el script ***configuracionesOKE.sh*** mediante los comandos 
 	```
 	cd Race2CloudFY24
  	bash configuracionesOKE.sh 
@@ -64,10 +67,11 @@
 	La ejecución de este comando tardará aproximadamente un minuto y al finalizar entregará los datos de acceso a ArgoCD
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/8788492d-f3a7-4a2d-9567-b8db7fb51f4b)
 
+7. Acceder a la URL entregada por el comando anterior utilizando las credenciales también entregadas (para cada caso las credenciales e ip son distintas)
+	
 
-6. das
-7. das
-8. da
-9. a
+8. das
+9. da
 10. a
-11. 
+11. a
+12. 
