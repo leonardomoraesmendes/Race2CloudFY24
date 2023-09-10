@@ -15,41 +15,48 @@
 
 ### Paso a Paso
 
-0. Crear Compartment
-	```
- 	Menu > Identity & Security > Compartmente > New Compartment
-	```
-	CAMPO				VALOR
-	==============================================
-	Name		 		OKE
-	Description 			OKE
-	Parent Compartment 		XXXXX (root)
-	```
- 
-1. Crear Cluster 
-
 ### Actividades post creación cluster
 
 1. Posterior a la creación del cluster OKE, acceder a este
 	Menu > Developer Services > Kubernetes Clusters (OKE)
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/af8781b0-f2fa-4575-97ff-a6705f171d20)
 
-2. Acceder a cluster creado (el nombre del cluster puede variar)
-	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/f3bb88c2-7c30-43cc-8726-027f68b2d993)
-	
+3. Acceder a cluster creado (el nombre del cluster puede variar)
+   
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/56f2949d-43c4-4999-a91e-6732affc4d22)
 
-3. Hacer click en **"Access Cluster"** 
-	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/8e77f63a-87d9-421c-a27d-f2f765c8e21f)
+5. Hacer click en la parte superior para abrir la consola del **"Cloud Shell"**
 
-   	Dejar seleccionada la opción "Cloud Shell Access" y hacer click en el botón "Launch Cloud shell"
-   	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/acb9614c-a301-4600-abd8-5efbea27653b)
-	
- 	Se abrirá una consola en la parte inferior de la pantalla. Una vez caragada, si es primera vez que se abre, mostrará un mensaje preguntando si deseamos leer más sobre *Cloud Shell*
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/c281f159-c86e-4051-b12f-618c447739ab)
+
+	Se abrirá una consola en la parte inferior de la pantalla. Una vez caragada, si es primera vez que se abre, mostrará un mensaje 	preguntando si deseamos leer más sobre *Cloud Shell*
 	En el caso de no desear hacerlo, teclear letra N y enter
-	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/5398d347-7e6a-40d8-b323-3f5012fa9829)
+
+6. Como el Cluster de Kubernetes esta configurado en una **"subred privada"** debemos crear un acceso privado
+
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/2fa17022-c6b8-416f-b8df-3fc7679b91cc)
+	
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/91486d4a-1909-4e30-8acf-057630ea4620)
+
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/d2ca2f22-0edd-4b32-a77c-6b3caa277757)
+
+	Posteriormente nuestra consola de Cloud Shell se va conectar por medio de una interface privada en la red del cluster de Kubernetes
+
+ 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/dc2253d4-00c1-41db-9cf0-017f215a3c94)
+
+
+8. Ahora hacer click en **"Access Cluster"**
+
+
+   	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/4fadde8d-ca08-45e0-93b2-8b319045e5f3)
+   
+9. Ahora se mostraran los comandos que se deben copiar y pegar para ejecutar en la consola del *Cloud Shell*
+
+
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/dcb81369-ded9-4a24-a9bd-ee9bcd6acec8)
 
  
-5. Clonar repositorio git desde consola mediante el comando
+11. Clonar repositorio git desde consola mediante el comando
 	```
 	git clone https://github.com/whiplash0104/Race2CloudFY24.git
  	```
@@ -57,7 +64,7 @@
 	
  	Este, descargará el contenido necesario para configurar el cluster
 
-6. Una vez desargado entrar al directorio ***Race2CloudFY24*** y ejecutar el script ***configuracionesOKE.sh*** mediante los comandos 
+12. Una vez desargado entrar al directorio ***Race2CloudFY24*** y ejecutar el script ***configuracionesOKE.sh*** mediante los comandos 
 	```
 	cd Race2CloudFY24
  	bash configuracionesOKE.sh 
@@ -67,10 +74,10 @@
 	La ejecución de este comando tardará aproximadamente un minuto y al finalizar entregará los datos de acceso a ArgoCD
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/8788492d-f3a7-4a2d-9567-b8db7fb51f4b)
 
-7. Acceder a la URL entregada por el comando anterior utilizando las credenciales también entregadas (para cada caso las credenciales e ip son distintas)
+13. Acceder a la URL entregada por el comando anterior utilizando las credenciales también entregadas (para cada caso las credenciales e ip son distintas)
  	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/5fc8f180-3521-4feb-be63-9aad5adf1513)
 
-8. Una vez dentro de la plataforma debemos crear 3 aplicaciones distintas de la sigueinte forma
+14. Una vez dentro de la plataforma debemos crear 3 aplicaciones distintas de la sigueinte forma
 	Hacer click en botín ***+ NEW APP***
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/06adb6f9-1d48-4def-bc47-2e320af0d7e1)
 
@@ -111,7 +118,7 @@
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/36c2fe79-7f47-40bb-9bba-9da04c8c2c5f)
 
  
-10. Repetir el mismo proceso para la siguiente aplicación
+15. Repetir el mismo proceso para la siguiente aplicación
 	Click en ***NEW APPLICATION*** y definir los siguientes parámetros
  	```
 	Application Name:			oci-reader
@@ -134,7 +141,7 @@
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/988635cb-48da-463e-b5a3-a603afe8d300)
 
 
-12. Repetir el mismo proceso para la última aplicación
+16. Repetir el mismo proceso para la última aplicación
 	Click en ***NEW APPLICATION*** y definir los siguientes parámetros
  	```
 	Application Name:			oci-transcribe
@@ -156,10 +163,10 @@
 	Al hacer click en estas podemos ver el detalle de lo desplegado (ejemplo: oci-reader)
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/3bea83ca-fe56-46bd-b6d9-6feac8048380)
 
-13. Para conectar a la aplicación desplegada dentro del ***Cloud Shell*** ejecutar
+17. Para conectar a la aplicación desplegada dentro del ***Cloud Shell*** ejecutar
 	```
 	kubectl get service -n ingress-nginx | grep LoadBalancer | awk '{print $4}'
  	```
  	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/98e7e60c-e995-433d-bc0a-b7ff34e9dcce)
 
-14. Acceder a la IP pública entregada
+18. Acceder a la IP pública entregada
