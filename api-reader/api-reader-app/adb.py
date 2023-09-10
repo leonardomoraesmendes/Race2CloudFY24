@@ -100,6 +100,6 @@ def retrieve_data():
         return json_res
         
     except Exception as error:
-        print(error)
         logging.getLogger().error("Failed:" + str(error))
-        raise Exception(error)
+        json_res = json.dumps( { "data":  "Failed:" + str(error) } , ensure_ascii=False)
+        return json_res
