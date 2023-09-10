@@ -22,7 +22,6 @@ def get_dbwallet_from_autonomousdb(dbwallet_dir, db_client, adb_ocid, dbpwd):
     return dbpwd   
 
 def get_connection(signer, adb_ocid, db_client):
-    
 
     dbuser = os.getenv("DBUSER")
     #dbuser = "ADMIN"
@@ -66,8 +65,6 @@ def retrieve_data():
 
         namespace = object_storage_client.get_namespace().data
 
-        #print(namespace)
-
         get_bucket_response = object_storage_client.get_bucket(
                 namespace_name=namespace, bucket_name=bucket_name_dest)
 
@@ -87,19 +84,19 @@ def retrieve_data():
         table = os.getenv("TABLE")
         #table = "WKSP_RACING.TRANSCRIBE_AUDIO"
 
+        columns =  ['id','text','confidence']
         select_stmt =  str("SELECT *FROM {0}").format(table)
-
 
         with dbconnection.cursor() as dbcursor:
             dbcursor.execute(select_stmt)
-            res_tuple_list = dbcursor.fetchall()
-            
+
+            res_tuple_list = [dict(zip(columns, row)) for row in dbcursor.fetchall()]            
             json_res = json.dumps( { "data":  res_tuple_list } , ensure_ascii=False)
 
         #print(json_res)
         return json_res
         
-    except Exception as error:
+    except Exception as error:        
         logging.getLogger().error("Failed:" + str(error))
         json_res = json.dumps( { "data":  "Failed:" + str(error) } , ensure_ascii=False)
         return json_res
