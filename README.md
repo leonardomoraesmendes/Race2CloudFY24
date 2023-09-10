@@ -25,14 +25,14 @@
    
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/56f2949d-43c4-4999-a91e-6732affc4d22)
 
-5. Hacer click en la parte superior para abrir la consola del **"Cloud Shell"**
+4. Hacer click en la parte superior para abrir la consola del **"Cloud Shell"**
 
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/c281f159-c86e-4051-b12f-618c447739ab)
 
 	Se abrirá una consola en la parte inferior de la pantalla. Una vez caragada, si es primera vez que se abre, mostrará un mensaje 	preguntando si deseamos leer más sobre *Cloud Shell*
 	En el caso de no desear hacerlo, teclear letra N y enter
 
-6. Como el Cluster de Kubernetes esta configurado en una **"subred privada"** debemos crear un acceso privado
+5. Como el Cluster de Kubernetes esta configurado en una **"subred privada"** debemos crear un acceso privado
 
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/2fa17022-c6b8-416f-b8df-3fc7679b91cc)
 	
@@ -44,19 +44,19 @@
 
  	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/dc2253d4-00c1-41db-9cf0-017f215a3c94)
 
+6. Ahora hacer click en **"Access Cluster"**
 
-8. Ahora hacer click en **"Access Cluster"**
+   	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/a1f39e2c-39fc-4cd0-98b4-5581f3978117)
 
-
-   	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/4fadde8d-ca08-45e0-93b2-8b319045e5f3)
    
-9. Ahora se mostraran los comandos que se deben copiar y pegar para ejecutar en la consola del *Cloud Shell*
+7. Ahora se mostraran los comandos que se deben copiar y pegar para ejecutar en la consola del *Cloud Shell*
 
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/383a892e-228a-4f0f-bbb2-315b740b5bf8)
 
-	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/dcb81369-ded9-4a24-a9bd-ee9bcd6acec8)
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/05ae701e-d6cd-422c-9f9a-f21abc8aa2ba)
 
  
-11. Clonar repositorio git desde consola mediante el comando
+8. Clonar repositorio git desde consola mediante el comando
 	```
 	git clone https://github.com/whiplash0104/Race2CloudFY24.git
  	```
@@ -169,4 +169,4 @@
  	```
  	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/98e7e60c-e995-433d-bc0a-b7ff34e9dcce)
 
-18. Acceder a la IP pública entregada
+18. Acceder a la IP pública entregada por medio del navegador web.
