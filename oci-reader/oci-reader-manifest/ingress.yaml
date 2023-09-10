@@ -20,12 +20,3 @@ spec:
               name: oci-reader-web-svc
               port:
                 number: 3000
-  - http:
-      paths:
-        - path: /oci-reader-back
-          pathType: Prefix
-          backend:
-            service:
-              name: oci-reader-back-svc
-              port:
-                number: 4000
