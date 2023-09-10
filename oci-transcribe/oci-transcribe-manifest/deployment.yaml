@@ -3,7 +3,7 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: oci-transcribe
-  namespace: oci-reader-test
+  namespace: oci-transcribe
 spec:
   schedule: "*/3 * * * *"
   jobTemplate:
