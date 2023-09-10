@@ -32,11 +32,11 @@ $KUBECTL apply -n $NS_ARGO -f $URL_ARGO
 $KUBECTL patch svc argocd-server -n $NS_ARGO -p '{"spec": {"type": "LoadBalancer"}}'
 
 URL_ARGO=$($KUBECTL get svc argocd-server -n $NS_ARGO | $GREP -v EXTER | $AWK '{print $4}')
-PASS_ARGO=$($KUBECTL -n $NS_ARGO get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d)
 
 while [ "$URL_ARGO" == "<pending>" ]; do 
 	sleep 5;
 	URL_ARGO=$($KUBECTL get svc argocd-server -n $NS_ARGO | $GREP -v EXTER | $AWK '{print $4}');  
 done
+PASS_ARGO=$($KUBECTL -n $NS_ARGO get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d)
 
 echo -e "\nURL ArgoCd: http://${URL_ARGO}:80 \nUsuario ArgoCd: admin\nPass ArgoCd: ${PASS_ARGO}"
