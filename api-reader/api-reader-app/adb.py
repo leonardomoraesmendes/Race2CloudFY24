@@ -91,7 +91,7 @@ def retrieve_data():
             dbcursor.execute(select_stmt)
 
             res_tuple_list = [dict(zip(columns, row)) for row in dbcursor.fetchall()]            
-            json_res = json.dumps( { "data":  res_tuple_list } , ensure_ascii=False)
+            json_res = json.dumps( res_tuple_list , ensure_ascii=False)
 
         #print(json_res)
         return json_res
