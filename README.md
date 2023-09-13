@@ -5,7 +5,6 @@
 ### Requerimientos:
 
 - Cuenta de Oracle Cloud Infrastructure(test gratuito https://www.oracle.com/cloud/free/)
-- Cuenta de Github (https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
 
 ### ¿Qué vamos a hacer?
 
@@ -35,28 +34,30 @@
 5. Como el Cluster de Kubernetes esta configurado en una **"subred privada"** debemos crear un acceso privado
 
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/2fa17022-c6b8-416f-b8df-3fc7679b91cc)
+
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/d2ca2f22-0edd-4b32-a77c-6b3caa277757)
 	
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/91486d4a-1909-4e30-8acf-057630ea4620)
 
-	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/d2ca2f22-0edd-4b32-a77c-6b3caa277757)
+	
 
 	Posteriormente nuestra consola de Cloud Shell se va conectar por medio de una interface privada en la red del cluster de Kubernetes
 
  	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/dc2253d4-00c1-41db-9cf0-017f215a3c94)
 
-6. Ahora hacer click en **"Access Cluster"**
+7. Ahora hacer click en **"Access Cluster"**
 
    	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/a1f39e2c-39fc-4cd0-98b4-5581f3978117)
 
    
-7. Ahora se mostraran los comandos que se deben copiar y pegar para ejecutar en la consola del *Cloud Shell*
+8. Ahora se mostraran los comandos que se deben copiar y pegar para ejecutar en la consola del *Cloud Shell*
 
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/383a892e-228a-4f0f-bbb2-315b740b5bf8)
 
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/05ae701e-d6cd-422c-9f9a-f21abc8aa2ba)
 
  
-8. Clonar repositorio git desde consola mediante el comando
+9. Clonar repositorio git desde consola mediante el comando
 	```
 	git clone https://github.com/whiplash0104/Race2CloudFY24.git
  	```
