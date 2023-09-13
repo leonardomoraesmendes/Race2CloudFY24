@@ -79,7 +79,7 @@
  	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/5fc8f180-3521-4feb-be63-9aad5adf1513)
 
 14. Una vez dentro de la plataforma debemos crear 3 aplicaciones distintas de la sigueinte forma
-	Hacer click en botín ***+ NEW APP***
+	Hacer click en botón ***+ NEW APP***
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/06adb6f9-1d48-4def-bc47-2e320af0d7e1)
 
  	Una ve dentro de ***NEW APPLICATION*** a crear la primera definir los siguientes parámetros dentro del apartado ***GENERAL***
