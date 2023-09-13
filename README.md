@@ -78,7 +78,7 @@
 13. Acceder a la URL entregada por el comando anterior utilizando las credenciales también entregadas (para cada caso las credenciales e ip son distintas)
  	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/5fc8f180-3521-4feb-be63-9aad5adf1513)
 
-14. Una vez dentro de la plataforma debemos crear 3 aplicaciones distintas de la sigueinte forma
+14. Una vez dentro de la plataforma debemos crear 3 aplicaciones distintas de la siguiente forma
 	Hacer click en botón ***+ NEW APP***
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/06adb6f9-1d48-4def-bc47-2e320af0d7e1)
 
