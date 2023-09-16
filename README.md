@@ -118,31 +118,8 @@
 	Si el proceso de despliegue finalizó de forma correcta cambiará a color verde
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/36c2fe79-7f47-40bb-9bba-9da04c8c2c5f)
 
- 
+
 15. Repetir el mismo proceso para la siguiente aplicación
-	Click en ***NEW APPLICATION*** y definir los siguientes parámetros
- 	```
-	Application Name:			oci-reader
-  	Project Name: 				Seleccionar el proyecto default
-  	SYYNC POLICY:				Seleccionar la opción Automatic
-	Dar click y selecionar en la opción AUTO-CREATE NAMESPACE
-  	Repository URL:				https://github.com/whiplash0104/Race2CloudFY24.git
- 	Revision:				main
- 	Path:					oci-reader/oci-reader-manifest
-  	Cluster URL:				Seleccionar la opción https://kubernetes.default.svc
- 	Namespace:				oci-reader
-  	```
-	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/09740c03-d10a-4b16-9b03-36b0b1631c37)
-	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/e92bb58f-c2be-44a3-a825-f924fcfe7a9b)
-
-	Podemos notar que mientras se despliega la nueva aplicación tenemos un porcentaje en verde y otro en celeste
-	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/f84b23c2-6d3d-4a59-9914-81984d54ed1d)
-
-	Una vez finalizado el despliegue de forma correcta podemos ver todo en verde
-	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/988635cb-48da-463e-b5a3-a603afe8d300)
-
-
-16. Repetir el mismo proceso para la última aplicación
 	Click en ***NEW APPLICATION*** y definir los siguientes parámetros
  	```
 	Application Name:			oci-transcribe
@@ -158,17 +135,42 @@
   	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/722a700b-5ccf-4587-ab75-ef0f50599335)
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/b904c0bb-6e34-4312-acb5-5e51e9fdc1de)
 
+
+	Podemos notar que la nueva aplicación ya esta desplegada
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/7bb44188-3313-4133-ad18-e9f38dd056c0)
+
+
+
+	Al hacer click en estas podemos ver el detalle de lo desplegado
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/3bc6200e-c1d0-42ad-87da-f8ab24e57c80)
+ 
+17. Repetir el mismo proceso para la última aplicación
+	Click en ***NEW APPLICATION*** y definir los siguientes parámetros
+ 	```
+	Application Name:			oci-reader
+  	Project Name: 				Seleccionar el proyecto default
+  	SYYNC POLICY:				Seleccionar la opción Automatic
+	Dar click y selecionar en la opción AUTO-CREATE NAMESPACE
+  	Repository URL:				https://github.com/whiplash0104/Race2CloudFY24.git
+ 	Revision:				main
+ 	Path:					oci-reader/oci-reader-manifest
+  	Cluster URL:				Seleccionar la opción https://kubernetes.default.svc
+ 	Namespace:				oci-reader
+  	```
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/09740c03-d10a-4b16-9b03-36b0b1631c37)
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/e92bb58f-c2be-44a3-a825-f924fcfe7a9b)
+
+	Podemos notar que la nueva aplicación tenemos un porcentaje en verde y otro en celeste
+	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/da7beb6a-9751-43ba-9464-207aadcf6235)
+
 	Una vez finalizado deberíamos tener las tres aplicaciones ejecutandose de forma correcta
 	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/4faa5440-eea7-4a2a-811a-0b87d3af0ece)
+	
 
-	Al hacer click en estas podemos ver el detalle de lo desplegado (ejemplo: oci-reader)
-	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/40583067/a1fcf038-3323-4ea7-80bc-5d99c2503ac5)
-
-
-18. Para conectar a la aplicación desplegada dentro del ***Cloud Shell*** ejecutar
+19. Para conectar a la aplicación desplegada dentro del ***Cloud Shell*** ejecutar
 	```
 	kubectl get service -n ingress-nginx | grep LoadBalancer | awk '{print $4}'
  	```
  	![image](https://github.com/whiplash0104/Race2CloudFY24/assets/14284928/98e7e60c-e995-433d-bc0a-b7ff34e9dcce)
 
-19. Acceder a la IP pública entregada por medio del navegador web.
+20. Acceder a la IP pública entregada por medio del navegador web.
