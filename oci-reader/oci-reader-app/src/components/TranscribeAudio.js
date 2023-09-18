@@ -13,6 +13,7 @@ export const TranscribeAudio = () => {
 
   const getData = async () => {
     setLoading(true)
+    console.log("Loading data...");
     const data = await fetch('api-reader')
       .catch((err) => {
         console.log(err);
@@ -20,15 +21,16 @@ export const TranscribeAudio = () => {
       .finally(() => {
         setLoading(false);
       });
-    const transcribeData = await data.json()
-    
+
+    const transcribeData = []
     try{
+      const transcribeData = await data.json()
       //try to get OCI error
       if (transcribeData.data.includes('error')) {
         console.log(transcribeData.data);
       }
-    
-    }catch(error){
+      
+    }catch(error){     
       console.log(transcribeData);
       setTable(transcribeData) 
     }
