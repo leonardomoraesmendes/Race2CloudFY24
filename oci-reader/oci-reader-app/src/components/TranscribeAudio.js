@@ -24,15 +24,22 @@ export const TranscribeAudio = () => {
 
     const transcribeData = []
     try{
+      console.info("Loading info ...")
       const transcribeData = await data.json()
-      //try to get OCI error
-      if (transcribeData.data.includes('error')) {
-        console.log(transcribeData.data);
-      }
       
+      try{
+        //try to get OCI error
+        if (transcribeData.data.includes('error')) {
+          console.log(transcribeData.data);
+        }
+      }catch(error){ 
+        console.error("Error")
+        console.error(error)
+      }
+      console.log(transcribeData)
+      setTable(transcribeData)
     }catch(error){     
-      console.log(transcribeData);
-      setTable(transcribeData) 
+      console.error(error)      
     }
 
   }
