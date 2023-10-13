@@ -25,5 +25,8 @@ spec:
                 - name: DBPWD
                   value: "ABCabc12341**"
                 - name: DBSVC
-                  value: "racing_medium"            
+                  value: "racing_medium"
+                - name: LANG
+                  value: "es-ES"
+                  #value: "pt-BR"                  
           restartPolicy: Never
