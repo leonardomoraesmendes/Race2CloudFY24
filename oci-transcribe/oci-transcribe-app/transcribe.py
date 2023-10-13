@@ -9,7 +9,7 @@ def transcription_job(signer):
 
         ai_client = oci.ai_speech.AIServiceSpeechClient(config={}, signer=signer)
         #ai_client = oci.ai_speech.AIServiceSpeechClient(signer)
-        LANGUAGE_CODE = "es-ES"
+        LANGUAGE_CODE = os.environ['LANG']
                 
         object_storage_client = oci.object_storage.ObjectStorageClient(config={}, signer=signer)
         #object_storage_client = oci.object_storage.ObjectStorageClient(config=signer)
