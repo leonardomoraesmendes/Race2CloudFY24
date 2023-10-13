@@ -65,7 +65,7 @@
 	
  	Este, descargará el contenido necesario para configurar el cluster
 
-12. Una vez desargado entrar al directorio ***Race2CloudFY24*** y ejecutar el script ***configuracionesOKE.sh*** mediante los comandos 
+12. Una vez descargado entrar al directorio ***Race2CloudFY24*** y ejecutar el script ***configuracionesOKE.sh*** mediante los comandos 
 	```
 	cd Race2CloudFY24
  	bash configuracionesOKE.sh 
