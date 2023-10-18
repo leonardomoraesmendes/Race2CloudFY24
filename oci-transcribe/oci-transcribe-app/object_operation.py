@@ -48,9 +48,10 @@ def transcribe_to_db(signer, files, object_storage_client, namespace, bucket_nam
     db_client = oci.database.DatabaseClient(config={}, signer=signer)
     #db_client = oci.database.DatabaseClient(config=signer)
 
-    #Assumption: database created in the same compartment.
     if(adb_ocid==None) :
-        list_autonomous = db_client.list_autonomous_databases(compartment_id=compartment_id)
+        list_autonomous = db_client.list_autonomous_databases(
+            compartment_id=compartment_id, 
+            lifecycle_state="AVAILABLE")
         adb_ocid = list_autonomous.data[0].id
         print(adb_ocid)
 
