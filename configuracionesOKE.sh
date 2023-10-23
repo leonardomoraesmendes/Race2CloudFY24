@@ -4,7 +4,7 @@ GREP=$(which grep)
 AWK=$(which awk)
 OPENSSL=$(which openssl)
 
-URL_INGRESS='deploy-ingress.yaml'
+URL_INGRESS='https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.3/deploy/static/provider/cloud/deploy.yaml'
 NS_ARGO='argocd'
 URL_ARGO='https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml'
 
