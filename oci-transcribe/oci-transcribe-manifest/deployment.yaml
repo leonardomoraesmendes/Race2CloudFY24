@@ -27,5 +27,5 @@ spec:
                 - name: DBSVC
                   value: "racing_medium"
                 - name: LANG
-                  value: "es-ES"               
+                  value: "pt-BR"               
           restartPolicy: Never
