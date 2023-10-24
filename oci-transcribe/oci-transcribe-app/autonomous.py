@@ -55,7 +55,7 @@ def get_connection(dbwallet_dir, db_client, adb_ocid):
 def upload_data(signer, data, dbconnection):
     try:
         table = os.getenv("TABLE")
-        #table = "WKSP_RACING-LEONARDO.TRANSCRIBE_AUDIO"
+        #table = "WKSP_RACING.TRANSCRIBE_AUDIO"
 
         insert_stmt =  str("INSERT INTO {0} VALUES (:1, :2, :3)").format(table)
 

@@ -15,7 +15,7 @@ spec:
               image: iad.ocir.io/idlhjo6dp3bd/oci-transcribe:latest
               env:
                 - name: TABLE
-                  value: "WKSP_RACING-LEONARDO.TRANSCRIBE_AUDIO"
+                  value: "WKSP_RACING.TRANSCRIBE_AUDIO"
                 - name: BUCKET_NAME
                   value: "DocumentAI-LEONARDO"
                 - name: BUCKET_NAME_DEST
