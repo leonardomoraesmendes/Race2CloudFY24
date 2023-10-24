@@ -82,7 +82,7 @@ def retrieve_data():
         dbconnection = get_connection(signer, adb_ocid, db_client)
 
         table = os.getenv("TABLE")
-        #table = "WKSP_RACING.TRANSCRIBE_AUDIO"
+        #table = "WKSP_RACING-LEONARDO.TRANSCRIBE_AUDIO"
 
         columns =  ['id','text','confidence']
         select_stmt =  str("SELECT *FROM {0}").format(table)
