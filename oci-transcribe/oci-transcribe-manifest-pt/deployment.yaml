@@ -19,7 +19,7 @@ spec:
                 - name: BUCKET_NAME
                   value: "DocumentAI-LEONARDO"
                 - name: BUCKET_NAME_DEST
-                  value: "transcribeAI"               
+                  value: "transcribeAI-LEONARDO"               
                 - name: DBUSER
                   value: "ADMIN"
                 - name: DBPWD

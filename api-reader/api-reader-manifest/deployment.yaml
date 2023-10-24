@@ -19,7 +19,7 @@ spec:
             - name: TABLE
               value: "WKSP_RACING-LEONARDO.TRANSCRIBE_AUDIO"
             - name: BUCKET_NAME_DEST
-              value: "transcribeAI"
+              value: "transcribeAI-LEONARDO"
             - name: DBUSER
               value: "ADMIN"
             - name: DBPWD

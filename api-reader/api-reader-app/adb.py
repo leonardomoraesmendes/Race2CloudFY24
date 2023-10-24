@@ -61,7 +61,7 @@ def retrieve_data():
         #object_storage_client = oci.object_storage.ObjectStorageClient(config=signer)
 
         bucket_name_dest = os.environ['BUCKET_NAME_DEST']
-        #bucket_name_dest = 'transcribeAI'
+        #bucket_name_dest = 'transcribeAI-LEONARDO'
 
         namespace = object_storage_client.get_namespace().data
 
