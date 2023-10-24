@@ -15,7 +15,7 @@ def transcription_job(signer):
         #object_storage_client = oci.object_storage.ObjectStorageClient(config=signer)
 
         bucket_name = os.environ['BUCKET_NAME']
-        #bucket_name = 'DocumentAI'
+        #bucket_name = 'DocumentAI-LEONARDO'
         bucket_name_dest = os.environ['BUCKET_NAME_DEST']
         #bucket_name_dest = 'transcribeAI'
 
